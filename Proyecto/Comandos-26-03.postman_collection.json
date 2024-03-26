@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "ab8c4252-ea42-4131-9874-aecb5543faae",
+		"name": "Requests NO TOCAR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33872266"
+	},
+	"item": [
+		{
+			"name": "Boards",
+			"item": [
+				{
+					"name": "All Boards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/me/boards?key={{key}}&token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								"me",
+								"boards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Board by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/{{testingBoardID}}?key={{key}}&token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								"{{testingBoardID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Board by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/{{testingBoardID}}?key={{key}}&token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								"{{testingBoardID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lists",
+			"item": [
+				{
+					"name": "All Lists of a Board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/66017f37fb41eb9eb2b5bc3a/lists?key={{key}}&token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								"66017f37fb41eb9eb2b5bc3a",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/66017f37fb41eb9eb2b5bc3a/lists?key={{key}}&token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								"66017f37fb41eb9eb2b5bc3a",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Members",
+			"item": [
+				{
+					"name": "Member Information by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/{{tariketId}}?key={{key}}&token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								"{{tariketId}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Members of a Board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/{{testingBoardID}}/members?key={{key}}&token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								"{{testingBoardID}}",
+								"members"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Enterprise",
+			"item": []
+		},
+		{
+			"name": "Labels",
+			"item": []
+		},
+		{
+			"name": "Cards",
+			"item": [
+				{
+					"name": "Cards by List Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/lists/66017f37c5e2ea1d24220f13/cards?key={{key}}&token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"lists",
+								"66017f37c5e2ea1d24220f13",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Card by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/{{testingBoardID}}?key={{key}}&token={{token}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								"{{testingBoardID}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Testing",
+			"item": [
+				{
+					"name": "Archieve List by Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/6602d121c8485a9dc7fa4f49/closed?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"6602d121c8485a9dc7fa4f49",
+								"closed"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Organization",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{host}}/boards/{{testingBoardID}}/organization"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "ID",
+			"value": "6602d566cb252f80009637a8"
+		},
+		{
+			"key": "key",
+			"value": "11e96175623d8b701a656db4f642c7fe"
+		},
+		{
+			"key": "token",
+			"value": "ATTAf5712b5758fdc98952ec65994a289d57e5e10d035e803b7713095a36cb86b1521FDB7B6A"
+		},
+		{
+			"key": "host",
+			"value": "https://api.trello.com/1/"
+		},
+		{
+			"key": "testingBoardID",
+			"value": "66017f37fb41eb9eb2b5bc3a"
+		},
+		{
+			"key": "tariketId",
+			"value": "66017e5b3a9ca70a9fba0eb5"
+		},
+		{
+			"key": "andreuId",
+			"value": "66017ff8cc6313dde5964dea"
+		},
+		{
+			"key": "cristianId",
+			"value": "66017b39609d8c2454220650"
+		},
+		{
+			"key": "joanId",
+			"value": "6602b868c3cd5b05141a05e6"
+		},
+		{
+			"key": "anaId",
+			"value": "6602b83dc705eed7755dd084"
+		}
+	]
+}
